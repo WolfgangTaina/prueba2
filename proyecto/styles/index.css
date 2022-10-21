@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;1,600&family=Nunito:ital,wght@0,300;0,400;0,600;1,500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.cabesa {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.logotext {
+  display: flex;
+  gap: 40px;
+}
+.h1 {
+  gap: 40px;
+  padding: 30px;
+  font-size: 40px;
+  color: orangered;
+}
+.h1 a {
+  color: orangered;
+  text-decoration: none;
+}
+.h1:hover {
+  opacity: 0.7;
+}
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+.items a {
+  color: orangered;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+.active {
+  text-decoration: underline double;
+}
+.items__menu:hover {
+  opacity: 0.7;
+}
+/**/
+.imagen {
+  background-image: url("../imagenes/gymprincipal.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-style: italic;
+  color: orangered;
+}
+/**/
+.pie {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  background-color: black;
+}
+.lema {
+  font-size: 30px;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orangered;
+}
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orangered;
+}
+.seguinos {
+  text-decoration: none;
+  font-style: italic;
+  color: orangered;
+}
+.seguinos:hover {
+  opacity: 0.7;
+}
+/*nosotros*/
+.contenedor {
+  display: grid;
+  width: 100%;
+  height: 82vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "caja1 caja2 caja3"
+    "caja4 caja5 caja6";
+}
+.caja1 {
+  grid-area: caja1;
+  background-image: url("../imagenes/gymfamilia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caja2 {
+  grid-area: caja2;
+  background-image: url("../imagenes/perstreiner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caja3 {
+  grid-area: caja3;
+  background-image: url("../imagenes/gymfemenino.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caja4 {
+  grid-area: caja4;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+.caja5 {
+  grid-area: caja5;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+.caja6 {
+  grid-area: caja6;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+.contenedor > div {
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: orangered;
+}
+/*imagenes*/
+.fotos {
+  display: grid;
+  width: 100%;
+  height: 82vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+}
+.foto1 {
+  grid-area: foto1;
+  background-image: url("../imagenes/maquina1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foto2 {
+  grid-area: foto2;
+  background-image: url("../imagenes/maquina2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foto3 {
+  grid-area: foto3;
+  background-image: url("../imagenes/maquina3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foto4 {
+  grid-area: foto4;
+  background-image: url("../imagenes/maquina4.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foto5 {
+  grid-area: foto5;
+  background-image: url("../imagenes/maquina5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foto6 {
+  grid-area: foto6;
+  background-image: url("../imagenes/maquina6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*ubicacion*/
+.info {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "info1 info2"
+    "info3 info4";
+}
+.info1 {
+  grid-area: info1;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.info2 {
+  grid-area: info2;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.info3 {
+  grid-area: info3;
+}
+.info4 {
+  grid-area: info4;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+/*contacto*/
+.datos {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas:
+    "dato1"
+    "dato2"
+    "dato3"
+    "dato4"
+    "dato5";
+}
+.dato1 {
+  grid-area: dato1;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: orangered;
+}
+.dato2 {
+  grid-area: dato2;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 30px;
+  background-color: black;
+  color: orangered;
+}
+.dato3 {
+  grid-area: dato3;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 30px;
+  background-color: black;
+  color: orangered;
+}
+.dato4 {
+  grid-area: dato4;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 30px;
+  background-color: black;
+  color: orangered;
+}
+.dato5 {
+  grid-area: dato5;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  padding: 30px;
+  background-color: black;
+  color: orangered;
+}
+/*media queries*/
+@media screen and (max-width: 480px) {
+  .cabesa {
+    width: 100%;
+    display: grid;
+  }
+  .logotext {
+    width: 100%;
+    display: flex;
+  }
+  .logoimagen {
+    height: 80px;
+  }
+  .h1 {
+    width: 100%;
+    font-size: 20px;
+    display: inline;
+  }
+  .items {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    font: size 20px;
+  }
+  /*menu*/
+  .imagen {
+    width: 100%;
+    height: 40%;
+    font-size: 42px;
+  }
+  /*pie*/
+  .lema {
+    font-size: 25px;
+  }
+  .seguinos {
+    font-size: 15px;
+  }
+  /*IMAGENES*/
+  .fotos {
+    display: grid;
+    width: 100%;
+    height: 82vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "foto1 foto2"
+      "foto3 foto4"
+      "foto5 foto6";
+  }
+  .foto1 {
+    grid-area: foto1;
+    background-image: url("../imagenes/maquina1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .foto2 {
+    grid-area: foto2;
+    background-image: url("../imagenes/maquina2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .foto3 {
+    grid-area: foto3;
+    background-image: url("../imagenes/maquina3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .foto4 {
+    grid-area: foto4;
+    background-image: url("../imagenes/maquina4.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .foto5 {
+    grid-area: foto5;
+    background-image: url("../imagenes/maquina5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .foto6 {
+    grid-area: foto6;
+    background-image: url("../imagenes/maquina6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymTiempolibre</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <header class="cabesa">
+      <nav class="logotext">
+        <img height="120px" src="./../imagenes/logogym.jpg" alt="logo" />
+        <h1 class="h1"><a href="index.html"> Gym Tiempo libre</a></h1>
+      </nav>
+
+      <nav class="barra">
+        <ul class="items">
+          <li class="items__menu"><a href="index.html">Inicio</a></li>
+          <li class="items__menu">
+            <a href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="items__menu"><a href="imagenes.html">Imagenes</a></li>
+          <li class="items__menu"><a href="ubicacion.html">Ubicación</a></li>
+          <li class="items__menu active">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="datos">
+        <h1 class="dato1">Ingresa tus datos</h1>
+        <div class="dato2">
+          <label for="nombre"
+            >Nombre:<input type="text" id="nombre" required
+          /></label>
+        </div>
+        <div class="dato3">
+          <label for="telefono">
+            Telefono:
+            <input type="number" name="telefono" id="telefono" required
+          /></label>
+        </div>
+        <div class="dato4">
+          <label for="consulta"
+            >Dejanos tu consulta
+            <textarea
+              name="consulta"
+              id="consulta"
+              required
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </div>
+        <div class="dato5">
+          <button type="submit">Enviar</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
